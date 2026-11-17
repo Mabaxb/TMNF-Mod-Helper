@@ -39,6 +39,33 @@ Notes and tools for making TrackMania Nations Forever (Stadium) mods.
 - [TMNF Mods (vinummusik.de)](http://www.vinummusik.de/Trackmania/)
 - [Stadium mods on ManiaPark](https://maniapark.com/search/mods?q=environment%3A+stadium+game%3A+trackmania1)
 
+## new_mod.py
+
+Creates a starter mod folder from `Game_Textures_Base` (the base game's D textures plus the
+files that need manual work), using the standard mod layout.
+
+```
+python new_mod.py <name> [--dest DIR] [--base DIR] [--sunset]
+```
+
+```
+<name>/
+  Image/          copy of Game_Textures_Base
+  Moods/Day/
+  Moods/Night/
+  Moods/Sunrise/
+  Moods/Sunset/   (only with --sunset)
+```
+
+| Option | What it does |
+|---|---|
+| `--dest DIR` | Where to create the mod (default: current folder) |
+| `--base DIR` | Base texture folder (default: `Game_Textures_Base` next to the script) |
+| `--sunset` | Also create `Moods/Sunset` |
+
+It won't overwrite an existing mod folder. Add your own `icon.dds` to the mod root.
+After editing the textures, run `gen_maps.py` on the mod's `Image` folder.
+
 ## gen_maps.py
 
 Generates N (normal) and S (specular/shininess) maps from D textures, calibrated against the

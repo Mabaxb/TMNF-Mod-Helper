@@ -5,7 +5,6 @@ Auto generated from game textures (Might have some errors). L/O (lightmap/occlus
 ## Map types
 
 - **N**: Normal map, DXT5nm (R=0, G=Y, B=Z, A=X)
-- **N**: Flat placeholder (15x16 TGA / constant) - no bumps
 - **S**: Specular colour (RGB) + shininess (A)
 - **S_tint**: Constant colour tint (RGB), shininess varies (A)
 - **S_dxt1**: Specular colour only, DXT1 (no shininess channel)
@@ -33,7 +32,7 @@ Auto generated from game textures (Might have some errors). L/O (lightmap/occlus
 | StadiumInflatableCastle | DXT1 512x512 | - | - | nothing |
 | StadiumInflatablePalmTree | DXT1 512x512 | - | - | nothing |
 | StadiumInflatableSnowTree | DXT1 256x256 | - | - | nothing |
-| StadiumPillar | DXT1 128x512 | N (DXT5 128x512) | S (DXT5 128x512) | N (game's is flat; generated anyway), S |
+| StadiumPillar | DXT1 128x512 | N (DXT5 128x512) | S (DXT5 128x512) | N, S |
 | StadiumPlatform | DXT1 1024x1024 | N (DXT5 1024x1024) | S (DXT5 1024x1024) | N, S |
 | StadiumPlatformFloor | DXT1 1024x512 | N (DXT5 1024x512) | S (DXT5 1024x512) | N, S |
 | StadiumRaceSignsRubber | DXT1 256x512 | N (DXT5 256x512) | S (DXT5 256x512) | N, S |
@@ -57,14 +56,14 @@ Auto generated from game textures (Might have some errors). L/O (lightmap/occlus
 | StadiumStructureAlpha | DXT1 512x1024 | N (DXT5 512x1024) | S_tint (DXT5 512x1024) | N, S |
 | StadiumStructureGeneric | DXT1 1024x1024 | N (DXT5 1024x1024) | S_tint (DXT5 512x512) | N, S |
 | StadiumWarpAuvent | DXT1 512x512 | N (DXT5 512x512) | S (DXT5 512x512) | N, S |
-| StadiumWarpAuvent2 | DXT1 512x512 | N_flat (TGA 15x16) | S_tint (DXT5 512x512) | S |
+| StadiumWarpAuvent2 | DXT1 512x512 | TGA 15x16 (flat placeholder, no bumps; not generated) | S_tint (DXT5 512x512) | S |
 | StadiumWarpAuventAlpha | DXT3 1024x1024 | N (DXT5 1024x1024) | S_tint (DXT5 1024x1024) | N, S |
 | StadiumWarpGlass | DXT5 512x512 | N (DXT5 512x512) | S (DXT5 512x512) | N, S |
 | StadiumWarpLogos | DXT1 512x512 | N (DXT5 256x256) | S_tint (DXT5 128x128) | nothing by default (generic banner cloth, shared with PubNvidiaWorldcup; `--banners` = from WarpLogosD) |
 | StadiumWarpParking | DXT1 1024x1024 | N (DXT5 1024x1024) | S (DXT5 1024x1024) | N, S |
-| StadiumWarpParvis | DXT1 512x512 | N_flat (TGA 15x16) | S_tint (DXT5 1024x1024) | S |
+| StadiumWarpParvis | DXT1 512x512 | TGA 15x16 (flat placeholder, no bumps; not generated) | S_tint (DXT5 1024x1024) | S |
 | StadiumWarpPub8X1 | - | N (DXT5 1024x128) | S_tint (DXT5 256x32) | nothing by default (generic banner cloth; `--banners` = from StartLogoD) |
-| StadiumWarpRoute | DXT1 256x256 | N_flat (TGA 15x16) | S (DXT5 256x256) | S |
+| StadiumWarpRoute | DXT1 256x256 | TGA 15x16 (flat placeholder, no bumps; not generated) | S (DXT5 256x256) | S |
 | StadiumWarpSpots | DXT1 128x128 | N (DXT5 128x128) | S (DXT5 128x128) | N, S |
 | StadiumWarpStands | DXT1 1024x1024 | N (DXT5 1024x1024) | S (DXT5 1024x1024) | N, S |
 | StadiumWarpStands2 | DXT1 512x512 | N (DXT5 512x512) | S (DXT5 512x512) | N, S |

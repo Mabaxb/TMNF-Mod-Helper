@@ -1,6 +1,7 @@
 # TMNF Mod helpers
 
 Notes and tools for making TrackMania Nations Forever (Stadium) mods.
+(Only for the Image folder. Nothing outside or the moods)
 
 ## Mod making notes
 
@@ -8,15 +9,15 @@ Notes and tools for making TrackMania Nations Forever (Stadium) mods.
 
 | Texture | Size |
 |---|---|
-| Dirt to road border | 317 |
-| Dirt to road road | 665 |
-| Loading screen | 768 |
-| Dirt booster | 789 |
+| Dirt to road border | Scale the height to 317 and palce it 423px from the bottom | 
+| Dirt to road road | Scale by 665 |
+| Loading screen | Scale from 768 to the black borders to avoid the image looking squished |
+| Dirt booster | Scale the height of the dirt texture to 789 if you want it as the base (looks kinda bad still) |
 
 ### BIK files
 
-- Under 100k bytes?
-- 3 seconds
+- Under 100k bytes
+- 3 seconds 
 
 ### DDS files
 
@@ -68,9 +69,10 @@ Behaviour worth knowing:
 
 - Never touches StadiumAirship textures or StadiumRoadToDirtS.
 - Inflatable S maps are written fully transparent.
-- Shared maps: RoadTurboN covers Turbo, TurboRoulette and FreeWheeling; Fabric and
-  FabricPool share FabricN/FabricS; StartLogo uses the WarpPub8X1 N/S; WarpLogos and
-  PubNvidiaWorldcup share the WarpLogos N/S.
+- RoadTurboN is by default created using the bottom half of the road texture
+- Shared maps: RoadTurboN covers Turbo, TurboRoulette and FreeWheeling; Fabric and FabricPool share FabricN/FabricS; 
+  Unsure shared textures: StartLogo uses the WarpPub8X1 N/S; WarpLogos and PubNvidiaWorldcup share the WarpLogos N/S.
+- The red ropes on castle blocks use one of the sign textures.
 - Flag files (StadiumWarpFlagA–X) are never treated as D textures.
 
 See [TEXTURE_TYPES.md](TEXTURE_TYPES.md) for the type and format of every Stadium texture.

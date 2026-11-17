@@ -42,23 +42,29 @@ The notes and `gen_maps.py` cover the Image folder only, not the moods or anythi
 
 ## new_mod.py
 
-Creates a starter mod folder by copying `Game_Textures_Base` (the base game's mod files) as it is.
+Creates a starter mod folder. The files come either from a `Game_Textures_Base` folder, or
+straight from your TMNF install with `--from-game`, so nobody needs a copy of the base files.
 
 ```
 python new_mod.py <name> [--dest DIR] [--base DIR]
+python new_mod.py <name> --from-game [GAMEDATA]
 ```
 
 ```
 <name>/
-  DirtMarks.dds, DirtSmoke.dds, IconEnvStadium.dds, UiBg*.dds
-  Image/          D textures + files that need manual work
-  Moods/          Day, Night, Sunrise, Sunset + cloud textures
+  DirtMarks.dds, DirtSmoke.dds, IconEnvStadium.dds, UiBgBottomCenterRace.dds, UiBgCard.dds
+  Image/          D textures + files that need manual work (no N/S maps)
+  Moods/          Day, Night, Sunrise, Sunset (.tga files) + cloud textures
 ```
 
 | Option | What it does |
 |---|---|
 | `--dest DIR` | Where to create the mod (default: current folder) |
 | `--base DIR` | Base folder to copy (default: `Game_Textures_Base` next to the script) |
+| `--from-game [DIR]` | Take the files from the game's GameData folder (default: `C:\Program Files (x86)\TmNationsForever\GameData`) |
+
+If the base folder doesn't exist, the game folder is used automatically. To (re)create the
+base folder itself: `python new_mod.py Game_Textures_Base --from-game`.
 
 It won't overwrite an existing mod folder. After editing the textures, run `gen_maps.py` on
 the mod's `Image` folder.

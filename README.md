@@ -1,7 +1,8 @@
 # TMNF Mod helpers
 
 Notes and tools for making TrackMania Nations Forever (Stadium) mods.
-(Only for the Image folder. Nothing outside or the moods)
+The notes and `gen_maps.py` cover the Image folder only, not the moods or anything outside it.
+`new_mod.py` sets up the full mod folder, with empty mood folders to fill in yourself.
 
 ## Mod making notes
 

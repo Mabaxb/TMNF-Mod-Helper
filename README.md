@@ -23,8 +23,8 @@ Notes and tools for making TrackMania Nations Forever (Stadium) mods.
 | Map | Format |
 |---|---|
 | D (diffuse) | BC1, or BC3 for transparency |
-| N (normal) | BC5 |
-| S (specular) | BC5 |
+| N (normal) | BC3 (DXT5), swizzled: R=0, G=Y, B=Z, A=X |
+| S (specular) | BC3 (DXT5): RGB = specular colour, A = shininess |
 
 ### TGA files
 

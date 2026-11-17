@@ -1,11 +1,11 @@
 # TMNF Stadium texture types
 
-Generated from `Textures/Game_Image`. L/O (lightmap/occlusion) files are listed but ignored.
+Auto generated from game textures (Might have some errors). L/O (lightmap/occlusion) files are listed but ignored.
 
 ## Map types
 
 - **N**: Normal map, DXT5nm (R=0, G=Y, B=Z, A=X)
-- **N_flat**: Flat placeholder (15x16 TGA / constant) - no bumps
+- **N**: Flat placeholder (15x16 TGA / constant) - no bumps
 - **S**: Specular colour (RGB) + shininess (A)
 - **S_tint**: Constant colour tint (RGB), shininess varies (A)
 - **S_dxt1**: Specular colour only, DXT1 (no shininess channel)
@@ -33,7 +33,7 @@ Generated from `Textures/Game_Image`. L/O (lightmap/occlusion) files are listed 
 | StadiumInflatableCastle | DXT1 512x512 | - | - | nothing |
 | StadiumInflatablePalmTree | DXT1 512x512 | - | - | nothing |
 | StadiumInflatableSnowTree | DXT1 256x256 | - | - | nothing |
-| StadiumPillar | DXT1 128x512 | N_flat (DXT5 128x512) | S (DXT5 128x512) | N (game's is flat; generated anyway), S |
+| StadiumPillar | DXT1 128x512 | N (DXT5 128x512) | S (DXT5 128x512) | N (game's is flat; generated anyway), S |
 | StadiumPlatform | DXT1 1024x1024 | N (DXT5 1024x1024) | S (DXT5 1024x1024) | N, S |
 | StadiumPlatformFloor | DXT1 1024x512 | N (DXT5 1024x512) | S (DXT5 1024x512) | N, S |
 | StadiumRaceSignsRubber | DXT1 256x512 | N (DXT5 256x512) | S (DXT5 256x512) | N, S |

@@ -9,8 +9,9 @@ Notes and tools for making TrackMania Nations Forever (Stadium) mods.
 
 | Texture | Size |
 |---|---|
-| Dirt to road border | Scale the height to 317 and palce it 423px from the bottom | 
-| Dirt to road road | Scale by 665 |
+| StadiumRoadToDirtD.dds ||
+| Dirt to road border (StadiumRoadBorderD) | Scale the height to 317 and palce it 423px from the bottom | 
+| Dirt to road road (StadiumRoadD) | Scale by 665 |
 | Loading screen | Scale from 768 to the black borders to avoid the image looking squished |
 | Dirt booster | Scale the height of the dirt texture to 789 if you want it as the base (looks kinda bad still) |
 

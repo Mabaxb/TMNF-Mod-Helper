@@ -2,7 +2,7 @@
 
 Notes and tools for making TrackMania Nations Forever (Stadium) mods.
 The notes and `gen_maps.py` cover the Image folder only, not the moods or anything outside it.
-`new_mod.py` sets up the full mod folder, with empty mood folders to fill in yourself.
+`new_mod.py` sets up a full mod folder (top-level files, Image and Moods) from the base game files.
 
 ## Mod making notes
 
@@ -42,30 +42,26 @@ The notes and `gen_maps.py` cover the Image folder only, not the moods or anythi
 
 ## new_mod.py
 
-Creates a starter mod folder from `Game_Textures_Base` (the base game's D textures plus the
-files that need manual work), using the standard mod layout.
+Creates a starter mod folder by copying `Game_Textures_Base` (the base game's mod files) as it is.
 
 ```
-python new_mod.py <name> [--dest DIR] [--base DIR] [--sunset]
+python new_mod.py <name> [--dest DIR] [--base DIR]
 ```
 
 ```
 <name>/
-  Image/          copy of Game_Textures_Base
-  Moods/Day/
-  Moods/Night/
-  Moods/Sunrise/
-  Moods/Sunset/   (only with --sunset)
+  DirtMarks.dds, DirtSmoke.dds, IconEnvStadium.dds, UiBg*.dds
+  Image/          D textures + files that need manual work
+  Moods/          Day, Night, Sunrise, Sunset + cloud textures
 ```
 
 | Option | What it does |
 |---|---|
 | `--dest DIR` | Where to create the mod (default: current folder) |
-| `--base DIR` | Base texture folder (default: `Game_Textures_Base` next to the script) |
-| `--sunset` | Also create `Moods/Sunset` |
+| `--base DIR` | Base folder to copy (default: `Game_Textures_Base` next to the script) |
 
-It won't overwrite an existing mod folder. Add your own `icon.dds` to the mod root.
-After editing the textures, run `gen_maps.py` on the mod's `Image` folder.
+It won't overwrite an existing mod folder. After editing the textures, run `gen_maps.py` on
+the mod's `Image` folder.
 
 ## gen_maps.py
 

@@ -4,7 +4,7 @@ new_mod.py - Create a new TMNF Stadium mod folder to start working from.
 
 The new mod gets this layout:
   <dest>/<name>/
-      DirtMarks.dds, DirtSmoke.dds, Icon.dds, UiBgBottomCenterRace.dds, UiBgCard.dds
+      DirtMarks.dds, DirtSmoke.dds, IconEnvStadium.dds, UiBgBottomCenterRace.dds, UiBgCard.dds
       Image/            D textures + files that need manual work (no N/S maps)
       Moods/            Day, Night, Sunrise, Sunset (.tga files) + cloud textures
 
@@ -42,7 +42,7 @@ MOODS = ['Day', 'Night', 'Sunrise', 'Sunset']
 TOP_FILES = {
     'DirtMarks.dds': 'Vehicles/Media/Texture/Image/DirtMarks.dds',
     'DirtSmoke.dds': 'Vehicles/Media/Texture/Image/DirtSmoke.dds',
-    'Icon.dds': 'Stadium/Media/Texture Icon/Image/IconEnvStadium.dds',
+    'IconEnvStadium.dds': 'Stadium/Media/Texture Icon/Image/IconEnvStadium.dds',
     'UiBgBottomCenterRace.dds': 'Interface/Media/Texture/Image/UiBgBottomCenterRace.dds',
     'UiBgCard.dds': 'Interface/Media/Texture/Image/UiBgCard.dds',
 }

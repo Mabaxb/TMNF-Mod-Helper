@@ -52,7 +52,7 @@ python new_mod.py <name> --from-game [GAMEDATA]
 
 ```
 <name>/
-  DirtMarks.dds, DirtSmoke.dds, Icon.dds, UiBgBottomCenterRace.dds, UiBgCard.dds
+  DirtMarks.dds, DirtSmoke.dds, IconEnvStadium.dds, UiBgBottomCenterRace.dds, UiBgCard.dds
   Image/          D textures + files that need manual work (no N/S maps)
   Moods/          Day, Night, Sunrise, Sunset (.tga files) + cloud textures
 ```
